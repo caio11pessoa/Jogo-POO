@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prediction</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        div#topo {
+            color: red;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo">
+        <center>BEM VINDO AO <BR>PREDICION</center>
+    </div>
+    <input type="text" name="login" id="login">
+    <input type="button" value="OK" onclick="clicou()">
+    <div id="apos"></div>
+    <input type="button" value="ENTRAR" onclick="testar()">
+    <script>
+        var login = window.document.getElementById('login')
+        var apos = window.document.getElementById('apos')
+        function clicou() {
+            if (login.value != 0) {
+                apos.innerHTML = `Olá ${login.value}, Seja bem vindo ao nosso jogo`
+            }
+        }
+        function testar() {
+            var teste = apos.innerText
+            if (teste == 0) {
+                apos.innerHTML = `Você não Registrou nenhum nome`
+            } else {
+                apos.innerHTML = `Você será redirecionado à página do jogo`
+            }
+        }
+    </script>
+</body>
+
+</html>
