@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prediction</title>
-    <style>
-        body {
-            background-color: beige;
-        }
-
-        div#topo {
-            color: red;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div id="topo">
-        <center>BEM VINDO AO <BR>PREDICION</center>
+    <div class="container">
+        <div id="topo">
+            <center>BEM VINDO AO <BR>PREDICION</center>
+        </div>
+        <div id="conteudo">
+            <input type="text" name="login" id="login">
+            <input type="button" value="OK" onclick="clicou()">
+            <input type="button" value="HELP" name="help" id="help">
+            
+            <div id="apos"></div>
+            <input type="button" value="ENTRAR" onclick="testar()">
+            <input type="checkbox" id="scales" name="Silenciar" checked>
+            <label for="scales"><strong>SILENCIAR</strong></label>
+        </div>
+
     </div>
-    <input type="text" name="login" id="login">
-    <input type="button" value="OK" onclick="clicou()">
-    <div id="apos"></div>
-    <input type="button" value="ENTRAR" onclick="testar()">
     <script>
         var login = window.document.getElementById('login')
         var apos = window.document.getElementById('apos')
@@ -35,7 +35,7 @@
             }
         }
         function testar() {
-            var teste = apos.innerText
+            var teste = login.value
             if (teste == 0) {
                 apos.innerHTML = `Você não Registrou nenhum nome`
             } else {
