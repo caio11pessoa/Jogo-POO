@@ -1,0 +1,22 @@
+Product Backlog
+
+0. Demais requisitos:
+	hospedar site no firebase;
+	criar classes que serão usadas na aplicação;
+	criar gerenciador de salas para criação, ocupação e desocupação das mesmas pelos usuários;
+
+1. Tela inicial:
+	construir tela inicial;
+	adicionar caixa de inserção de texto e sua funcionalidade implementada;
+	adicionar botão de "Play" e sua funcionalidade implementada;
+	adicionar botão de "Help" e sua funcionalidade implementada;
+
+2. Tela de ajuda:
+	construir tela de Help;
+	adicionar conteúdo da tela;
+	adicionar botão para retornar à tela de início;
+
+3. Tela de jogo;
+	construir tela de jogo;
+	criar interface para o usuário;
+	implementar classe gerenciadora da partida;
