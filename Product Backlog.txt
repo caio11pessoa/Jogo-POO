@@ -10,30 +10,43 @@ Product Backlog
 
 1. Tela inicial: [score total:]
 	construir tela inicial; [score:]
-	adicionar e posicionar caixa de inserção de texto e sua funcionalidade implementada; [score:]
-	adicionar e posicionar botão de "Play" e sua funcionalidade implementada; [score:]
-	adicionar e posicionar botão de "Help" e sua funcionalidade implementada; [score:]
+	caixa de inserção de texto:
+		criar caixa na tela; [score:]
+		posicionar no meio da tela (seguindo protótipo); [score:]
+	botão help:
+		criar botão na tela; [score:]
+		posicionar no meio da tela (seguindo protótipo); [score:]
+		implementar funcionalidade de ir para tela de help; [score:]
+	botão play:
+		criar botão na tela; [score:]
+		posicionar no meio da tela (seguindo protótipo); [score:]
+		implementar funcionalidade de ir para tela de jogo e definir o nickname do usuário; [score:]
 
 2. Tela de ajuda: [score total:]
 	construir tela de Help; [score:]
-	adicionar e posicionar conteúdo da tela; [score:]
-	adicionar e posicionar botão para retornar à tela de início; [score:]
+	conteúdo da tela:
+		posicionar caixa de texto na tela (seguindo o protótipo); [score:]
+		colocar texto na caixa de texto; [score:]
+	botão para retornar à tela de início; [score:]
+		criar botão na tela; [score:]
+		posicionar no canto superior direito da tela; [score:]
+		implementar funcionalidade para retornar à tela de início; [score:]
 
 3. Tela de jogo: [score total:]
-	construir tela de jogo; [score:]
-	criar interface para o usuário; [score:]
-		criar e posicionar lista de valor dos naipes [score:]
-		criar e posicionar lista de valor das cartas; [score:]
-			animar alteração da ordem da lista; [score:]
-		posicionar jogadores na tela; [score:]
-			exibir nicknames, apostas, vitórias até o momento; [score:]
-			exibir as cartas que o jogador tem e as que estão na mesa; [score:]
-			jogador apenas vê o fundo das cartas que estão na mão dos outros jogadores; [score:]
-		criar e posicionar cartas na tela; [score:]
-			animar movimentação de cartas; [score:]
-				distribuição de cartas; [score:]
-				jogar cartas da mão para a mesa; [score:]
-				limpar mesa ao fim da rodada animando as cartas indo na direção do vencedor; [score:]
-					caso não haja vencedor, as cartas vão na direção de quem ganhou a rodada anterior [score:]
 	implementar classe gerenciadora da partida; [score:]
+	construir tela de jogo; [score:]
+	criar interface para o usuário:
+		criar e posicionar lista de valor dos naipes do lado direito da tela; [score:]
+		criar e posicionar lista de valor das cartas do lado direito da tela; [score:]
+			animar alteração da ordem da lista de cartas; [score:]
+		posicionar jogadores na tela:
+			exibir nicknames, apostas e vitórias até o momento de cada jogador; [score:]
+		criar e posicionar cartas na tela:
+			exibir as cartas que o jogador tem na mão e as que estão na mesa; [score:]
+			jogador apenas vê o fundo das cartas que estão na mão dos outros jogadores; [score:]
+			animar movimentação de cartas; [score:]
+			animar distribuição de cartas; [score:]
+			animar jogar cartas da mão para a mesa; [score:]
+			animar limpar mesa ao fim da rodada movendo as cartas indo na direção do vencedor; [score:]
+				(caso não haja vencedor, as cartas vão na direção de quem ganhou a rodada anterior)
 	ao fim da partida, voltar à tela de início; [score:]
