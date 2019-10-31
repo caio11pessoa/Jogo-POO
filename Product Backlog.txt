@@ -1,22 +1,39 @@
 Product Backlog
 
-0. Demais requisitos:
-	hospedar site no firebase;
-	criar classes que serão usadas na aplicação;
-	criar gerenciador de salas para criação, ocupação e desocupação das mesmas pelos usuários;
+0. Demais requisitos: [score total:]
+	hospedar site no firebase; [score:]
+	criar classes que serão usadas na aplicação; [score:]
+		classe dealer (gerenciador); [score:]
+		classe player (jogador); [score:]
+		classe card (cartas do jogo); [score:]
+	criar gerenciador de salas para criação, ocupação e desocupação das mesmas pelos usuários (dealer); [score:]
 
-1. Tela inicial:
-	construir tela inicial;
-	adicionar caixa de inserção de texto e sua funcionalidade implementada;
-	adicionar botão de "Play" e sua funcionalidade implementada;
-	adicionar botão de "Help" e sua funcionalidade implementada;
+1. Tela inicial: [score total:]
+	construir tela inicial; [score:]
+	adicionar e posicionar caixa de inserção de texto e sua funcionalidade implementada; [score:]
+	adicionar e posicionar botão de "Play" e sua funcionalidade implementada; [score:]
+	adicionar e posicionar botão de "Help" e sua funcionalidade implementada; [score:]
 
-2. Tela de ajuda:
-	construir tela de Help;
-	adicionar conteúdo da tela;
-	adicionar botão para retornar à tela de início;
+2. Tela de ajuda: [score total:]
+	construir tela de Help; [score:]
+	adicionar e posicionar conteúdo da tela; [score:]
+	adicionar e posicionar botão para retornar à tela de início; [score:]
 
-3. Tela de jogo;
-	construir tela de jogo;
-	criar interface para o usuário;
-	implementar classe gerenciadora da partida;
+3. Tela de jogo: [score total:]
+	construir tela de jogo; [score:]
+	criar interface para o usuário; [score:]
+		criar e posicionar lista de valor dos naipes [score:]
+		criar e posicionar lista de valor das cartas; [score:]
+			animar alteração da ordem da lista; [score:]
+		posicionar jogadores na tela; [score:]
+			exibir nicknames, apostas, vitórias até o momento; [score:]
+			exibir as cartas que o jogador tem e as que estão na mesa; [score:]
+			jogador apenas vê o fundo das cartas que estão na mão dos outros jogadores; [score:]
+		criar e posicionar cartas na tela; [score:]
+			animar movimentação de cartas; [score:]
+				distribuição de cartas; [score:]
+				jogar cartas da mão para a mesa; [score:]
+				limpar mesa ao fim da rodada animando as cartas indo na direção do vencedor; [score:]
+					caso não haja vencedor, as cartas vão na direção de quem ganhou a rodada anterior [score:]
+	implementar classe gerenciadora da partida; [score:]
+	ao fim da partida, voltar à tela de início; [score:]
