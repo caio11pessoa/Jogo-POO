@@ -10,7 +10,11 @@ Product Backlog
 
 1. Tela inicial: [score total:]
 	construir tela inicial; [score:]
-	caixa de inserção de texto:
+		criar conteiner para definir seu tamanho; [score:]
+		criar tela do tamanho 1080/920; [score:]
+		colocar de fundo; [score:]
+		
+	caixa de inserção de texto de login:
 		criar caixa na tela; [score:]
 		posicionar no meio da tela (seguindo protótipo); [score:]
 	botão help:
