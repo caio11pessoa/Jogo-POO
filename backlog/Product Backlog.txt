@@ -1,0 +1,56 @@
+Product Backlog
+
+0. Demais requisitos: [score total:]
+	hospedar site no firebase; [score:]
+	criar classes que serão usadas na aplicação; [score:]
+		classe dealer (gerenciador); [score:]
+		classe player (jogador); [score:]
+		classe card (cartas do jogo); [score:]
+	criar gerenciador de salas para criação, ocupação e desocupação das mesmas pelos usuários (dealer); [score:]
+
+1. Tela inicial: [score total:]
+	construir tela inicial; [score:]
+		criar conteiner para definir seu tamanho; [score:]
+		criar tela do tamanho 1080/920; [score:]
+		colocar de fundo; [score:]
+		
+	caixa de inserção de texto de login:
+		criar caixa na tela; [score:]
+		posicionar no meio da tela (seguindo protótipo); [score:]
+	botão help:
+		criar botão na tela; [score:]
+		posicionar no meio da tela (seguindo protótipo); [score:]
+		implementar funcionalidade de ir para tela de help; [score:]
+	botão play:
+		criar botão na tela; [score:]
+		posicionar no meio da tela (seguindo protótipo); [score:]
+		implementar funcionalidade de ir para tela de jogo e definir o nickname do usuário; [score:]
+
+2. Tela de ajuda: [score total:]
+	construir tela de Help; [score:]
+	conteúdo da tela:
+		posicionar caixa de texto na tela (seguindo o protótipo); [score:]
+		colocar texto na caixa de texto; [score:]
+	botão para retornar à tela de início; [score:]
+		criar botão na tela; [score:]
+		posicionar no canto superior direito da tela; [score:]
+		implementar funcionalidade para retornar à tela de início; [score:]
+
+3. Tela de jogo: [score total:]
+	implementar classe gerenciadora da partida; [score:]
+	construir tela de jogo; [score:]
+	criar interface para o usuário:
+		criar e posicionar lista de valor dos naipes do lado direito da tela; [score:]
+		criar e posicionar lista de valor das cartas do lado direito da tela; [score:]
+			animar alteração da ordem da lista de cartas; [score:]
+		posicionar jogadores na tela:
+			exibir nicknames, apostas e vitórias até o momento de cada jogador; [score:]
+		criar e posicionar cartas na tela:
+			exibir as cartas que o jogador tem na mão e as que estão na mesa; [score:]
+			jogador apenas vê o fundo das cartas que estão na mão dos outros jogadores; [score:]
+			animar movimentação de cartas; [score:]
+			animar distribuição de cartas; [score:]
+			animar jogar cartas da mão para a mesa; [score:]
+			animar limpar mesa ao fim da rodada movendo as cartas indo na direção do vencedor; [score:]
+				(caso não haja vencedor, as cartas vão na direção de quem ganhou a rodada anterior)
+	ao fim da partida, voltar à tela de início; [score:]
